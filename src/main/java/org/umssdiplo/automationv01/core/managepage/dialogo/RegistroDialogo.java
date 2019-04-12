@@ -29,14 +29,15 @@ public class RegistroDialogo extends BasePage {
     @FindBy(xpath = "/html/body/app-root/app-configuracion/div/form/div[6]/button")
     private WebElement enviarBotton;
 
-    @FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[2]/a")
+
+    @FindBy(xpath = "*[@id=\"navbarSupportedContent\"]/ul/li[2]/a")
     private WebElement categoriaBotton;
 
     @FindBy(xpath = "/html/body/app-root/app-catalog/div/div[1]/div/a[1]")
     private WebElement tractoresBotton;
 
-    /*@FindBy(xpath = "//*[@id=\"pills-tractores\"]/div/div[7]/div/div/div/div[2]/button[2]")
-    private WebElement eliminarBotton;*/
+    @FindBy(xpath = "//*[@id=\"pills-tractores\"]/div/div[1]/div/div/div/div[2]/button[2]")
+    private WebElement eliminarBotton;
 
 
     public RegistroDialogo() {
@@ -67,7 +68,7 @@ public class RegistroDialogo extends BasePage {
         CommonEvents.clickButton(enviarBotton);
     }
 
-    public void clickCategoryBoton(){
+    public void clickCategoriaBoton(){
         CommonEvents.clickButton(categoriaBotton);
     }
 
@@ -75,8 +76,13 @@ public class RegistroDialogo extends BasePage {
         CommonEvents.clickButton(tractoresBotton);
     }
 
-    //public void clickEliminarBoton(){
-       // CommonEvents.clickButton(eliminarBotton);
-    //}
+    public void clickEliminarBoton(){
+        CommonEvents.clickButton(eliminarBotton);
+
+    }
+
+
+
+
 
 }

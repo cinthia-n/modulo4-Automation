@@ -74,21 +74,31 @@ public class StepsDefinitionPHPtravel {
         registroDialogo.clickEnviarBoton();
     }
 
-    @When("^click on 'Category' button$")
-    public void clickOnCategoryButton() throws Throwable {
-        registroDialogo.clickCategoryBoton();
-    }
+
 
     @And("^click on 'Tractores' submenu$")
     public void clickOnTractoresSubmenu() throws Throwable {
         registroDialogo.clickTractoresBoton();
     }
 
-    /*@And("^click on 'Eliminar' button$")
-    public void clickOnEliminarButton() throws Throwable {
-        registroDialogo.clickEliminarBoton();
 
-    }*/
+    @And("^click on 'Eliminar' button$")
+    public void clickOnEliminarButton()throws Throwable {
+        registroDialogo.clickEliminarBoton();
+    }
+
+    @And("^click on 'categoria' button in 'Project' page$")
+    public void clickOnCategoriaProjectButtonInProjectPage()throws Throwable {
+        registroDialogo.clickCategoriaBoton();
+    }
+
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 # Login feature review the behavior in thie feature
 Feature: Projects
 
-  Background: Creacion de maquinarias
+  Background: Creacion de maquinarias y Eliminar maquinaria
     Given 'Project' page is loaded
 
 
@@ -13,9 +13,13 @@ Feature: Projects
     And type "123" in Precio field
     And type "1" in SubCategoriaId field
     And click on 'Enviar' button
-    And click on 'Category' button
-    And click on 'Tractores' submenu
     #Then should see "ABC marca" on the table
+
+   Scenario: Eliminar maquinaria
+    And click on 'categoria' button in 'Project' page
+    And click on 'Tractores' submenu
+    And click on 'Eliminar' button
+
 
   #Scenario Outline: Crear maquinaria2
     #And click on 'configuracion' button in 'Project' page
@@ -32,8 +36,8 @@ Feature: Projects
      # | Modelo | Marca       |
       #| ABC123 | MarcaABC123 |
      # | yz123  | Marcayz123  |
-  #Scenario: Eliminar maquinaria
-    #And click on 'Eliminar' button
+
+
 
 
 
