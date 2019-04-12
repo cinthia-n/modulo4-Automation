@@ -25,7 +25,8 @@ public class RegistroDialogo extends BasePage {
     private WebElement subCategoriaIdField;
 
 
-    @FindBy(xpath = "//button[@type='submit']")
+    //@FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "/html/body/app-root/app-configuracion/div/form/div[6]/button")
     private WebElement enviarBotton;
 
     @FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[2]/a")
