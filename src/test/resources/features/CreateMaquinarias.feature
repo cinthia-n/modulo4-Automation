@@ -15,10 +15,10 @@ Feature: Projects
     And click on 'Enviar' button
     #Then should see "ABC marca" on the table
 
-   Scenario: Eliminar maquinaria
+   #Scenario: Eliminar maquinaria
     And click on 'categoria' button in 'Project' page
     And click on 'Tractores' submenu
-    And click on 'Eliminar' button
+   # And click on 'Eliminar' button
 
 
   #Scenario Outline: Crear maquinaria2
